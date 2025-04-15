@@ -1,5 +1,5 @@
 {
-  "name": "docs",
+  "name": "@demo/docs",
   "version": "1.0.0",
   "scripts": {
     "docs:dev": "vitepress dev",

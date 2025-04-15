@@ -4,25 +4,31 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'Demo UI library',
   description: 'A UI library build with tailwind',
+  lang: 'zh-CN',
+  cleanUrls: true,
+  srcDir: './src',
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    outline: 'deep',
+
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
+      { text: '基于pnpm workspace的monorepo前端工程化', link: '/pnpm-monorepo' },
     ],
 
     sidebar: [
       {
         text: 'Examples',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
+          { text: '基于pnpm workspace的monorepo前端工程化', link: '/pnpm-monorepo' },
         ],
       },
     ],
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
-    ],
+    docFooter: {
+      prev: '上一页',
+      next: '下一页',
+    },
   },
 })

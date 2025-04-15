@@ -5,14 +5,10 @@ layout: home
 hero:
   name: "Demo UI library"
   text: "A UI library build with tailwind"
-  tagline: My great project tagline
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 基于pnpm workspace的monorepo前端工程化
+      link: /pnpm-monorepo
 
 features:
   - title: Feature A
