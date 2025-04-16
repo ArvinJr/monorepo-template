@@ -1,5 +1,5 @@
 {
-  "name": "mono-demo",
+  "name": "monorepo-template",
   "version": "1.0.0",
   "scripts": {
     "dev:play": "pnpm --parallel --stream --filter @demo/ui --filter @demo/play dev",
