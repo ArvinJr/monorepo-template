@@ -7,6 +7,9 @@
     "dev": "rm -rfv dist && tailwindcss -i ./src/index.css -o ./dist/ui.css --watch",
     "build": "rm -rfv dist && vue-tsc -b && vite build"
   },
+  "files": [
+    "dist"
+  ],
   "main": "dist/demo-ui.umd.js",
   "module": "dist/demo-ui.es.js",
   "types": "dist/src/index.d.ts",
