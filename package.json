@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "scripts": {
     "dev:play": "pnpm --parallel --stream --filter @demo/ui --filter @demo/play dev",
-    "dev:fronted": "pnpm build:ui && pnpm --filter @demo/frontend dev",
-    "buil:ui": "pnpm --filter @demo/ui build",
+    "dev:frontend": "pnpm build:ui && pnpm --filter @demo/frontend dev",
+    "build:ui": "pnpm --filter @demo/ui build",
     "build:frontend": "pnpm build:ui && pnpm --filter @demo/frontend build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "docs:dev": "pnpm --filter @demo-docs docs:dev",
-    "docs:build":"pnpm --filter @demo-docs docs:build",
-    "docs:preview": "pnpm --filter @demo-docs docs:preview"
+    "docs:dev": "pnpm --filter @demo/docs docs:dev",
+    "docs:build":"pnpm --filter @demo/docs docs:build",
+    "docs:preview": "pnpm --filter @demo/docs docs:preview"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.12.0",
